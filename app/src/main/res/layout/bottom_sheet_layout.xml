@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/idRLBottomSheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
+    android:padding="20dp">
+
+
+
+    <!--Text view for displaying a heading text-->
+    <ImageView
+        android:id="@+id/idIVimage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:padding="5dp" />
+
+    <!--Text View for displaying description text-->
+    <TextView
+        android:id="@+id/idTVtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toRightOf="@id/idIVimage"
+        android:padding="5dp"
+        android:text="Message one"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/idTVtextTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTVtext"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toEndOf="@id/idIVimage"
+        android:padding="5dp"
+        android:text="Message Two"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/reserveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idTVtextTwo"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@+id/idIVimage"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="RESERVE&#10;Free for 60 minutes" />
+
+    <TextView
+        android:id="@+id/emergencyID"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Emergency? Click Here!"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/idIVimage"
+        android:layout_below="@+id/reserveBtn"
+        android:layout_marginStart="5dp"
+        android:textSize="10dp"
+        />
+
+
+</RelativeLayout>
